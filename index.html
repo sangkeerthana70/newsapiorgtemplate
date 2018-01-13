@@ -8,22 +8,36 @@
         Page requires a key.js file with the following format
         var APIKEY = "apikey from newsapi.org"
     -->
-    
+    <style>
+		.headline {
+			border:1px;
+			border-style:solid;
+			width:600px;
+			margin:10px;
+			padding:30px;
+			background-color:powderblue;
+			display:none;
+			font:15px,"arial",sans-serif;
+		}
+		li {
+			padding:5px;
+		}
+	</style>
 </head>
 <body>
     <div class="container">
         <form id="source">
             <div class="form-group">
                 <select id="selection">
-                    
                 </select
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-    </div>
-    
-    <div id="list"> 
-
+		<ol id="headline" class="headline">
+		</ol>
+		
+		
+		
     </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
